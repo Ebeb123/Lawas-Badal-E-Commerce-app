@@ -134,6 +134,9 @@ class ProductResource extends Resource
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
+
+                TextColumn::make('category.name')
+                    ->searchable(),    
                 
                 TextColumn::make('brand.name')
                     ->searchable(), 
