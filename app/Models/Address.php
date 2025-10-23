@@ -12,13 +12,14 @@ class Address extends Model
 
     protected $fillable = [
         'order_id',
-        'first_name',
+        'firt_name',
         'last_name',
         'phone',
-        'steet_address',
+        'street_address',
         'city',
         'state',
         'zip_code',
+        
 
     ];
 
@@ -29,6 +30,6 @@ class Address extends Model
 
     public function getFullNameAttribute()
     {
-        return "{$this->first_name} {$this->last_name}";
+        return "{$this->firt_name} {$this->last_name}";
     } 
 }
