@@ -56,7 +56,7 @@ class OrderResource extends Resource
 
                     Select::make('payment_method')
                         ->options([
-                            'strip' => 'Stripe',
+                            'stripe' => 'Stripe',
                             'bank_transfer' => 'Bank Transfer',
                             'paypal' => 'PayPal',
                             'cod' => 'Cash on Delivery',
@@ -78,21 +78,21 @@ class OrderResource extends Resource
                         ->default('new')
                         ->required()   
                         ->options([
-                            'New' => 'New',
+                            'new' => 'New',
                             'processing' => 'Processing',
                             'shipped' => 'Shipped',
                             'delivered' => 'Delivered',
                             'canceled' => 'Cancelled',
                         ])
                         ->colors([
-                            'New' => 'info',
+                            'new' => 'info',
                             'processing' => 'warning',
                             'shipped' => 'success',
                             'delivered' => 'success',
                             'canceled' => 'danger',
                         ])
                         ->icons([
-                            'New' => 'heroicon-m-sparkles',
+                            'new' => 'heroicon-m-sparkles',
                             'processing' => 'heroicon-m-arrow-path',
                             'shipped' => 'heroicon-m-truck',
                             'delivered' => 'heroicon-m-check-badge',
