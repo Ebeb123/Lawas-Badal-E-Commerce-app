@@ -232,7 +232,7 @@ class OrderResource extends Resource
 
                 SelectColumn::make('status')
                 ->options([
-                    'New' => 'New',
+                    'new' => 'New',
                     'processing' => 'Processing',
                     'shipped' => 'Shipped',
                     'delivered' => 'Delivered',
