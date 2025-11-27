@@ -66,5 +66,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    
+    "audit": {
+        "ignore": [
+            "PKSA-365x-2zjk-pt47"
+        ]
+    }
 }
